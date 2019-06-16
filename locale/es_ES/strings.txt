@@ -3740,6 +3740,10 @@ $TLS_testCaseStatus_rework = 'Modificado';
 $TLS_testCaseStatus_obsolete = 'Obsoleto';
 $TLS_testCaseStatus_future = 'Futuro';
 $TLS_testCaseStatus_final = 'Final';		
+$TLS_testCaseStatus_definitionInProgress = 'Definición en progreso'; 
+$TLS_testCaseStatus_definitionReadyForReview = 'Definición lista para revisar';
+$TLS_testCaseStatus_definitionNeedsUpdate = 'Definición debe ser actualizada';
+$TLS_testCaseStatus_definitionFinished = 'Definición finalizada';
 
 // printDocument.php
 $TLS_report_test_plan_design = 'Informe de Diseño del Plan de Pruebas';	

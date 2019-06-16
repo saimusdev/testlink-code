@@ -595,6 +595,19 @@ define('TL_REVIEW_STATUS_REVIEW',   3);
 define('TL_REVIEW_STATUS_OBSOLETE', 4); 
 define('TL_REVIEW_STATUS_FUTURE',   5); 
 
+/** CUSTOM
+/** Review status: 
+ *  20. test definition in progress
+ *  21. test definition ready for review
+ *  22. test definition needs update
+ *  23. test definition finished
+ * .... */
+define('TL_REVIEW_STATUS_DEFINITION_IN_PROGRESS', 20); 
+define('TL_REVIEW_STATUS_DEFINITION_READY_FOR_REVIEW', 21); 
+define('TL_REVIEW_STATUS_DEFINITION_NEEDS_UPDATE', 22); 
+define('TL_REVIEW_STATUS_DEFINITION_FINISHED', 23); 
+
+
 /** 
  * @var array localization identifiers for review states
  * @since 2.0 
@@ -604,7 +617,11 @@ $tlCfg->text_status_labels = array(
     TL_REVIEW_STATUS_FINAL => 'review_status_final', 
     TL_REVIEW_STATUS_REVIEW => 'review_status_review',
     TL_REVIEW_STATUS_OBSOLETE => 'review_status_obsolete', 
-    TL_REVIEW_STATUS_FUTURE => 'review_status_future');
+    TL_REVIEW_STATUS_FUTURE => 'review_status_future',
+    TL_REVIEW_STATUS_DEFINITION_IN_PROGRESS => 'review_status_definition_in_progress',
+    TL_REVIEW_STATUS_DEFINITION_READY_FOR_REVIEW => 'review_status_definition_ready_for_review',
+    TL_REVIEW_STATUS_DEFINITION_NEEDS_UPDATE => 'review_status_definition_needs_update',
+    TL_REVIEW_STATUS_DEFINITION_FINISHED => 'review_status_definition_finished');
 
 /** 
  *
@@ -924,5 +941,7 @@ $tlCfg->results['charts']['dimensions'] =
 //  
 $tlCfg->testCaseStatus = array( 'draft' => 1, 'readyForReview' => 2, 
                                 'reviewInProgress' => 3, 'rework' => 4, 
-                                'obsolete' => 5, 'future' => 6, 'final' => 7 );   
+                                'obsolete' => 5, 'future' => 6, 'final' => 7,
+								'definitionInProgress' => 20, 'definitionReadyForReview' => 21,
+								'definitionNeedsUpdate' => 22, 'definitionFinished' => 23);   
 // END 
